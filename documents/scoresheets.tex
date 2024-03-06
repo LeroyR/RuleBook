@@ -43,7 +43,7 @@
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 %%  L E A G U E S                       %%
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
-\loadTeamsListFile
+\loadTeamsListFile{}
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 %%  H E A D I N G S                     %%
@@ -76,13 +76,13 @@
       \vspace*{.27cm}
       \Huge{RoboCup@Home}\\[1.23ex]
       \ifthenelse{\equal{\league}{}}{}{\huge{\leagueFullName}\\[1.23ex]}
-      \Large Forms \& Score Sheets\\[2ex]
+      \Large Forms \& Scoresheets\\[2ex]
     }
     \hrulefill\par
     \vfill
-    ~~ Version: \YEAR \quad \svnRevision ~~ \\
-    ~~ Last Build Date: \today \quad Time: \the\time ~~ \\
-    ~~ \svnChangeData ~~ %\\
+    ~~Version: \YEAR{}\quad{}\svnRevision{}~~\\
+    ~~Last Build Date: \today \quad Time: \the\time{}~~\\
+    ~~\svnChangeData{}~~%\\
     %\vfill
   \end{center}
 \end{titlepage}
@@ -221,4 +221,4 @@
 
 \end{document}
 
-\grid
+\grid{}

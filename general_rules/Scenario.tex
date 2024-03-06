@@ -1,8 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Scenario}
-\label{sec:scenario}
+\section{Scenario}\label{sec:scenario}
 
-Most competition tests take place in the \RoboCup\AtHome\Arena, but some tests may take place outside, in a previously unknown public place.
+Most competition tests take place in the \RoboCup\AtHome\Arena{}, but some tests may take place outside, in a previously unknown public place.
 In this section, the \Arena{} and its contents are described, in particular the furnishing and other information that is common between tests and leagues.
 
 \subsection{RoboCup@Home Arena}
@@ -35,8 +34,7 @@ The indoor home setting will be surrounded by high and low \Term{walls}{Arena wa
 \end{enumerate}
 
 
-\subsection{Furniture}
-\label{rule:scenario_furniture}
+\subsection{Furniture}\label{rule:scenario_furniture}
 
 The \Arena{} is furnished with typical objects common for the host country.
 The minimal configuration consists of:
@@ -61,7 +59,7 @@ The \Arena{}'s kitchen has:
 A typical \Arena{} setup is shown in~\reffig{fig:scenario_arena}.
 \begin{figure}[tbp]
 	\centering
-	\subfloat[Typical Arena]{\label{fig:scenario_arena}\includegraphics[height=46mm]{images/typical_arena.jpg}} ~
+	\subfloat[Typical Arena]{\label{fig:scenario_arena}\includegraphics[height=46mm]{images/typical_arena.jpg}}
 	\subfloat[Typical objects]{\label{fig:scenario_objects}\includegraphics[height=46mm]{images/typical_objects.jpg}}
 	\caption{An example of a \RoboCup\AtHome scenario}
 	\label{fig:arena}
@@ -77,8 +75,7 @@ The cupboard may have doors.
 At least one powered and functioning fridge is required in the \Arena.
 The fridge must not be smaller than \SI{120}{\centi\meter}.
 
-\subsection{Changes to the \Arena}
-\label{rule:scenario_changes}
+\subsection{Changes to the \Arena}\label{rule:scenario_changes}
 
 Since robots should be able to function in the real world, the \Arena{} is not fixed and might change without further notice.
 \begin{enumerate}
@@ -102,8 +99,7 @@ Since robots should be able to function in the real world, the \Arena{} is not f
 \def\NumLocations{20\ }
 \def\NumNames{20\ }
 
-\subsection{Objects}
-\label{rule:scenario_objects}
+\subsection{Objects}\label{rule:scenario_objects}
 
 Some tests in the RoboCup@Home league involve recognizing and manipulating objects (see Figure~\reffig{fig:scenario_objects}).
 The TC will compile a list of at least \NumObjects objects for this purpose; the list will contain a picture of the each object, as well as its official name and \ObjectCategory{} (for instance, an \textit{Apple} belongs to the \textit{Fruits} category).
@@ -127,13 +123,13 @@ Two types of objects are used in the tasks:
 
 The minimal configuration of \KnownObjects{} consists of:
 \begin{itemize}
-	\item \textbf{\iterm{Tableware}:} Dish, bowl, cup (or mug), and napkin (see Figure \ref{fig:scenario_container_bowl}).
+	\item \textbf{\iterm{Tableware}:} Dish, bowl, cup (or mug), and napkin (see Figure~\ref{fig:scenario_container_bowl}).
 	\item \textbf{\iterm{Cutlery}:} Fork, knife, and spoon.
 	\item \textbf{\iterm{Trash Bags}:} Big plastic trash bags, preferably with a handle.
-	\item \textbf{\iterm{Bags}:} Lightweight and with stiff, vertical handles (see Figure \ref{fig:scenario_container_bag}).
+	\item \textbf{\iterm{Bags}:} Lightweight and with stiff, vertical handles (see Figure~\ref{fig:scenario_container_bag}).
 	\item \textbf{\iterm{Disks or books}:} A set of discs (LP, CD, DVD, or BluRay) or books.
 	\item \textbf{\iterm{Coat rack}:} A rack or pole to hang coats and other clothes.
-	\item \textbf{\iterm{Trays}:} A transport object such as a tray or basket, intended for bimanual manipulation (see Figure \ref{fig:scenario_container_tray}).
+	\item \textbf{\iterm{Trays}:} A transport object such as a tray or basket, intended for bimanual manipulation (see Figure~\ref{fig:scenario_container_tray}).
 	\item \textbf{\iterm{Pourable}:} An object whose content can be poured (such as a cereal box).
 	\item \textbf{\iterm{Heavy object}:} Weight between 1.0kg and 1.5kg.
 	\item \textbf{\iterm{Tiny object}:} A lightweight object that is not bigger than \SI{5}{\centi\meter} (such as paper, a teabag, or a pen).
@@ -145,16 +141,16 @@ The minimal configuration of \KnownObjects{} consists of:
 \begin{figure}[H]
 	\centering
 	\subfloat[Cereal bowls]{
-		\label{fig:scenario_container_bowl}\includegraphics[width=0.33\textwidth]{images/container_bowl.png}}~
+		\includegraphics[width=0.33\textwidth]{images/container_bowl.png}}\label{fig:scenario_container_bowl}
 	\subfloat[Bright-colored paper bags]{
-		\label{fig:scenario_container_bag}\includegraphics[width=0.33\textwidth]{images/container_paper_bag.png}}~
+		\includegraphics[width=0.33\textwidth]{images/container_paper_bag.png}}\label{fig:scenario_container_bag}
 	\subfloat[Serving tray]{
-		\label{fig:scenario_container_tray}\includegraphics[width=0.33\textwidth]{images/container_tray.png}}
+		\includegraphics[width=0.33\textwidth]{images/container_tray.png}}\label{fig:scenario_container_tray}
 	\caption{Example of object containers}
 	\label{fig:scenario_containers}
 \end{figure}
 
-During the competition, objects can be requested based on their \ObjectCategory, physical attributes, or a combination of both.
+During the competition, objects can be requested based on their \ObjectCategory{}, physical attributes, or a combination of both.
 Relevant attributes to be used are:
 \begin{itemize}
 	\item Color (such as red, blue, black with white dots, etc.).
